@@ -1,3 +1,9 @@
+/* coolors pallet 
+4E86A7//78,134,167
+224357 
+EFE9F4 
+2C3130//168,10%,19% 
+5863F8//236,65%,97%*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,23 +175,19 @@ p {
   font-family: 'Montserrat';
 }
 .marketing-contact-banner .marketing-contact-nav a:hover {
-  background-color: #000000;
+  color: #a583c1;
+  background-color: #224357;
 }
 .marketing-sticky-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: sticky;
   top: 0;
-  width: 100%;
-  background-color: #4E86A7;
-  opacity: 80%;
 }
 .marketing-sticky-nav .marketing-nav-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  background-color: rgba(78, 134, 167, 0.8);
   padding: 1% 0;
 }
 .marketing-sticky-nav .marketing-nav-container h1 {
@@ -199,7 +201,7 @@ p {
 }
 .marketing-sticky-nav .marketing-nav-container nav a {
   width: 18%;
-  background-color: #4E86A7;
+  background-color: transparent;
   color: #EFE9F4;
   text-align: center;
   text-decoration: none;
@@ -210,7 +212,7 @@ p {
   font-family: 'Lato';
 }
 .marketing-sticky-nav .marketing-nav-container nav a:hover {
-  background-color: #1d323f;
+  color: #24172e;
 }
 .marketing-banner-background {
   background-image: url("../img/projects-img.jpeg");
@@ -241,6 +243,8 @@ p {
 .marketing-banner-background .marketing-banner-container h2 {
   font-family: 'Montserrat';
   color: #EFE9F4;
+  padding: 1% 5% ;
+  border-bottom: 2px solid #2C3130;
 }
 .marketing-banner-background .marketing-banner-container button {
   width: 25%;
@@ -252,8 +256,96 @@ p {
   padding: 1% 0;
   border-radius: 10px;
   border-color: #EFE9F4;
-  margin-top: 2%;
+  margin-top: 1.5%;
 }
 .marketing-banner-background .marketing-banner-container button:hover {
   background-color: rgba(7, 19, 176, 0.7);
+}
+.marketing-middle-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.marketing-middle-cards h2 {
+  width: 65%;
+  font-family: 'Montserrat';
+  text-align: center;
+  border-bottom: 2px solid #2C3130;
+  padding-top: 3%;
+  margin-bottom: 1%;
+}
+.marketing-middle-cards .marketing-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+  padding: 2%;
+  background-color: #7179ee;
+}
+.marketing-middle-cards .marketing-card-container .marketing-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: large;
+  text-align: center;
+  width: 26%;
+  margin: 4% 2%;
+  border: 1px dashed black;
+}
+.marketing-middle-cards .marketing-card-container .marketing-card .fa {
+  font-size: 6rem;
+}
+.marketing-middle-cards .marketing-card-container .marketing-card button {
+  width: 60%;
+  background-color: #7179ee;
+  color: #EFE9F4;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 1% 0;
+  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.marketing-middle-cards .marketing-card-container .marketing-card button:hover {
+  background-color: #724a94;
+}
+.marketing-middle-cards .marketing-card-container .marketing-card * {
+  padding: 2%;
+  margin: 2% 0;
+}
+.marketing-page-width-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-page-width-container .marketing-closing-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 3%;
+  margin: 2% 0;
+}
+.marketing-page-width-container .marketing-closing-paragraph button {
+  width: 40%;
+  background-color: rgba(88, 99, 248, 0.7);
+  color: #EFE9F4;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 1% 0;
+  border-radius: 10px;
+}
+.marketing-page-width-container .marketing-closing-paragraph button:hover {
+  background-color: rgba(7, 19, 176, 0.7);
+}
+.marketing-page-width-container .marketing-closing-paragraph * {
+  margin: 2% 0;
 }
