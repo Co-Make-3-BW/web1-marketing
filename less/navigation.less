@@ -1,0 +1,50 @@
+.marketing-contact-banner{
+    .flex(center,center);
+    width:100%;
+    background-color: @marketing-nav-color;
+    // padding: 1% 0;
+
+    .marketing-contact-nav{
+        .flex(space-evenly, center);
+        width: 100%; //@marketing-page-width;
+        
+        a{
+            .marketing-navbutton(23%, @marketing-nav-color, @marketing-nav-font-color);
+            
+            font-size: 1.5rem;
+            padding: 1%;
+            font-family: @marketing-page-font1;
+            
+        }
+    }
+}//end contact banner
+
+.marketing-sticky-nav{
+    .flex(center,center);
+    position: sticky;
+    top:0;
+    width:100%;
+    background-color: @marketing-sticky-nav-color;
+    opacity: 80%;
+
+    .marketing-nav-container{
+        .flex(space-evenly,center);
+        width:100%;//@marketing-page-width;
+        // background-color: @marketing-sticky-nav-color;
+        padding: 1% 0;
+    
+        h1{
+            color: @marketing-nav-font-color;
+        }
+        nav {
+            .flex(center,center);
+            width:75%;
+            a{
+                .marketing-navbutton(18%, @marketing-sticky-nav-color, @marketing-nav-font-color);
+                margin:0 2%;
+                font-family: @marketing-page-font2;
+            }
+        }
+    }
+}
+

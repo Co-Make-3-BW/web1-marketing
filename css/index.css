@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.marketing-contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #224357;
+}
+.marketing-contact-banner .marketing-contact-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.marketing-contact-banner .marketing-contact-nav a {
+  width: 23%;
+  background-color: #224357;
+  color: #EFE9F4;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 1% 0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 1%;
+  font-family: 'Montserrat';
+}
+.marketing-contact-banner .marketing-contact-nav a:hover {
+  background-color: #000000;
+}
+.marketing-sticky-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #4E86A7;
+  opacity: 80%;
+}
+.marketing-sticky-nav .marketing-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1% 0;
+}
+.marketing-sticky-nav .marketing-nav-container h1 {
+  color: #EFE9F4;
+}
+.marketing-sticky-nav .marketing-nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.marketing-sticky-nav .marketing-nav-container nav a {
+  width: 18%;
+  background-color: #4E86A7;
+  color: #EFE9F4;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 1% 0;
+  border-radius: 10px;
+  margin: 0 2%;
+  font-family: 'Lato';
+}
+.marketing-sticky-nav .marketing-nav-container nav a:hover {
+  background-color: #1d323f;
+}
+.marketing-banner-background {
+  background-image: url("../img/projects-img.jpeg");
+  max-width: 100%;
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: top;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-banner-background .marketing-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(88, 99, 248, 0.7);
+  padding: 2%;
+}
+.marketing-banner-background .marketing-banner-container h2 {
+  font-family: 'Montserrat';
+  color: #EFE9F4;
+}
+.marketing-banner-background .marketing-banner-container button {
+  width: 25%;
+  background-color: rgba(88, 99, 248, 0.7);
+  color: #EFE9F4;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 1% 0;
+  border-radius: 10px;
+  border-color: #EFE9F4;
+  margin-top: 2%;
+}
+.marketing-banner-background .marketing-banner-container button:hover {
+  background-color: rgba(7, 19, 176, 0.7);
+}
