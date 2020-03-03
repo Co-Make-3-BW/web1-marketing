@@ -349,3 +349,11 @@ p {
 .marketing-page-width-container .marketing-closing-paragraph * {
   margin: 2% 0;
 }
+.marketing-bottom-copyright {
+  width: 100%;
+  background-color: #2C3130;
+  text-align: center;
+  color: #EFE9F4;
+  padding: 1%;
+  font-size: 1.5rem;
+}
