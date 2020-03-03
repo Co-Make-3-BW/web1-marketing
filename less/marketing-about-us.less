@@ -1,0 +1,67 @@
+.marketing-aboutus-intro{
+    .flex(center,center);
+    flex-direction: column;
+    padding:1% 0;
+    margin:1%;
+    border-bottom: 2px solid black;
+    *{
+        margin: 1%;
+    }
+}
+
+.aboutus-cards-container{
+    .flex(space-around,center);
+    flex-wrap: wrap;
+    flex-direction: column;
+    // background-color: @about-background-color;
+
+    .aboutus-card{
+        .flex(space-between,center);
+        width: 80%;
+        margin: 1%;
+        background-color: @about-card-background;
+
+        .about-img-box{
+            .flex(center,center);
+            flex-direction: column;
+            width:30%;
+            
+            img{
+                width:70%;
+                
+                margin-bottom:1%;
+            }
+            .about-icons{
+                .flex(space-around, center);
+                width:70%;
+                font-size: 2.5rem;
+                border-top: 2px dashed black;
+                border-bottom: 2px dashed black;
+                a{
+                    margin:2%;
+                }
+            }
+        }
+
+        .about-card-text{
+            width:68%;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;;
+        }
+
+        *{
+            margin:1%;
+        }
+    }
+    .about-reverse{
+        flex-direction: row-reverse;
+    }
+}
+.about-contact{
+    .flex(center,center);
+    flex-direction: column;
+    width:100%;
+    border-top: 2px solid black;
+    padding: 1%;
+    margin:1%;
+}

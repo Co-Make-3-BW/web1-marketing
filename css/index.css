@@ -138,6 +138,10 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  max-width: 100%;
+}
 h1 {
   font-size: 3.2rem;
 }
@@ -356,4 +360,75 @@ p {
   color: #EFE9F4;
   padding: 1%;
   font-size: 1.5rem;
+}
+.marketing-aboutus-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 0;
+  margin: 1%;
+  border-bottom: 2px solid black;
+}
+.marketing-aboutus-intro * {
+  margin: 1%;
+}
+.aboutus-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.aboutus-cards-container .aboutus-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 1%;
+  background-color: #5863F8;
+}
+.aboutus-cards-container .aboutus-card .about-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+.aboutus-cards-container .aboutus-card .about-img-box img {
+  width: 70%;
+  margin-bottom: 1%;
+}
+.aboutus-cards-container .aboutus-card .about-img-box .about-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  font-size: 2.5rem;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+.aboutus-cards-container .aboutus-card .about-img-box .about-icons a {
+  margin: 2%;
+}
+.aboutus-cards-container .aboutus-card .about-card-text {
+  width: 68%;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+.aboutus-cards-container .aboutus-card * {
+  margin: 1%;
+}
+.aboutus-cards-container .about-reverse {
+  flex-direction: row-reverse;
+}
+.about-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px solid black;
+  padding: 1%;
+  margin: 1%;
 }
