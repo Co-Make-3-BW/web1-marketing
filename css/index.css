@@ -318,6 +318,11 @@ p {
 .marketing-banner-background .marketing-banner-container button:hover {
   background-color: rgba(7, 19, 176, 0.7);
 }
+@media (max-width: 500px) {
+  .marketing-banner-background .marketing-banner-container button {
+    width: 50%;
+  }
+}
 .marketing-middle-cards {
   display: flex;
   justify-content: center;
@@ -351,6 +356,11 @@ p {
   width: 26%;
   margin: 4% 2%;
   border: 1px dashed black;
+}
+@media (max-width: 500px) {
+  .marketing-middle-cards .marketing-card-container .marketing-card {
+    width: 45%;
+  }
 }
 .marketing-middle-cards .marketing-card-container .marketing-card .fa {
   font-size: 6rem;
