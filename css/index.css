@@ -140,7 +140,7 @@ html {
 }
 html,
 body {
-  max-width: 100%;
+  width: 100%;
 }
 h1 {
   font-size: 3.2rem;
@@ -165,6 +165,7 @@ p {
   align-items: center;
   width: 100%;
 }
+.marketing-contact-banner .marketing-contact-nav div,
 .marketing-contact-banner .marketing-contact-nav a {
   width: 23%;
   background-color: #224357;
@@ -178,13 +179,27 @@ p {
   padding: 1%;
   font-family: 'Montserrat';
 }
+.marketing-contact-banner .marketing-contact-nav div:hover,
 .marketing-contact-banner .marketing-contact-nav a:hover {
   color: #a583c1;
   background-color: #224357;
 }
+@media (max-width: 860px) {
+  .marketing-contact-banner .marketing-contact-nav a {
+    display: none;
+  }
+  .marketing-contact-banner .marketing-contact-nav i {
+    font-size: 2rem;
+  }
+}
 .marketing-sticky-nav {
   position: sticky;
   top: 0;
+}
+@media (max-width: 500px) {
+  .marketing-sticky-nav {
+    position: relative;
+  }
 }
 .marketing-sticky-nav .marketing-nav-container {
   display: flex;
@@ -194,14 +209,39 @@ p {
   background-color: rgba(78, 134, 167, 0.8);
   padding: 1% 0;
 }
+@media (max-width: 860px) {
+  .marketing-sticky-nav .marketing-nav-container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .marketing-sticky-nav .marketing-nav-container h1 {
   color: #EFE9F4;
+}
+@media (max-width: 500px) {
+  .marketing-sticky-nav .marketing-nav-container h1 {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin: 1% 0;
+    padding-bottom: 1%;
+  }
 }
 .marketing-sticky-nav .marketing-nav-container nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 75%;
+}
+@media (max-width: 500px) {
+  .marketing-sticky-nav .marketing-nav-container nav {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px dashed white;
+  }
 }
 .marketing-sticky-nav .marketing-nav-container nav a {
   width: 18%;
@@ -217,6 +257,14 @@ p {
 }
 .marketing-sticky-nav .marketing-nav-container nav a:hover {
   color: #24172e;
+}
+@media (max-width: 500px) {
+  .marketing-sticky-nav .marketing-nav-container nav a {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px dashed white;
+  }
 }
 .marketing-banner-background {
   background-image: url("../img/projects-img.jpeg");
@@ -370,6 +418,13 @@ p {
   margin: 1%;
   border-bottom: 2px solid black;
 }
+.marketing-aboutus-intro h1 {
+  font-family: 'Montserrat';
+  text-decoration: underline;
+}
+.marketing-aboutus-intro p {
+  font-family: 'Lato';
+}
 .marketing-aboutus-intro * {
   margin: 1%;
 }
@@ -408,6 +463,12 @@ p {
   border-top: 2px dashed black;
   border-bottom: 2px dashed black;
 }
+.aboutus-cards-container .aboutus-card .about-img-box .about-icons i {
+  color: white;
+}
+.aboutus-cards-container .aboutus-card .about-img-box .about-icons i:hover {
+  color: #b3b3b3;
+}
 .aboutus-cards-container .aboutus-card .about-img-box .about-icons a {
   margin: 2%;
 }
@@ -415,20 +476,68 @@ p {
   width: 68%;
   border-top: 2px dashed black;
   border-bottom: 2px dashed black;
+  color: #EFE9F4;
+}
+.aboutus-cards-container .aboutus-card .about-card-text h2 {
+  font-family: 'Montserrat';
+  text-decoration: underline;
+}
+.aboutus-cards-container .aboutus-card .about-card-text h3 {
+  font-size: 1.8rem;
+  font-family: 'Lato';
+  text-decoration: underline;
+}
+.aboutus-cards-container .aboutus-card .about-card-text p {
+  font-family: 'Lato';
 }
 .aboutus-cards-container .aboutus-card * {
-  margin: 1%;
+  margin: 2%;
 }
 .aboutus-cards-container .about-reverse {
   flex-direction: row-reverse;
 }
-.about-contact {
+.about-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-contact-container .about-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1%;
+  margin: 1% 0;
+}
+.about-contact-container .about-contact .about-contact-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  border-top: 2px solid black;
+}
+.about-contact-container .about-contact .about-contact-form label {
+  width: 70%;
+  font-size: 1.5rem;
+}
+.about-contact-container .about-contact .about-contact-form input {
+  width: 70%;
+  font-size: 1.5rem;
+  margin: 1%;
   padding: 1%;
+}
+.about-contact-container .about-contact .about-contact-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
   margin: 1%;
 }

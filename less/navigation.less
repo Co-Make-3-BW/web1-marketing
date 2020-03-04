@@ -7,39 +7,78 @@
     .marketing-contact-nav{
         .flex(space-evenly, center);
         width: 100%; //@marketing-page-width;
+
+        // i{
+        //     font-size: 1.5rem;
+        //     padding: 1%;
+            
+
+        //     &:hover{
+        //         color:darken(@marketing-nav-font-color, 30%);
+        //         background-color: @marketing-nav-color;
+        //     }
+        // }
         
-        a{
+        div, a{
             .marketing-navbutton(23%, @marketing-nav-color, @marketing-nav-font-color);
             
             font-size: 1.5rem;
             padding: 1%;
             font-family: @marketing-page-font1;
+            
 
             &:hover{
                 color:darken(@marketing-nav-font-color, 30%);
                 background-color: @marketing-nav-color;
             }
+
+            
             
         }
+        @media @tablet{
+                a{
+                    display:none;
+                }
+                i{
+                    font-size: 2rem;
+                }
+            }
     }
 }//end contact banner
 
 .marketing-sticky-nav{
     position: sticky;
     top:0;
+    @media @mobile{
+        position: relative;
+    }
 
     .marketing-nav-container{
         .flex(space-evenly,center);
         width:100%;//@marketing-page-width;
         background-color: @marketing-sticky-nav-color;
         padding: 1% 0;
+
+        @media @tablet{
+            .mediamode();
+        }
     
         h1{
             color: @marketing-nav-font-color;
+            @media @mobile{
+                .mediamode();
+                border-bottom: 2px solid white;
+                margin:1% 0;
+                padding-bottom: 1%;
+            }
         }
         nav {
             .flex(center,center);
             width:75%;
+            @media @mobile{
+                .mediamode();
+                border-bottom: 1px dashed white;
+            }
             a{
                 .marketing-navbutton(18%, transparent, @marketing-nav-font-color);
                 margin:0 2%;
@@ -47,6 +86,10 @@
                 &:hover{
                     color:darken(@marketing-nav-font-color, 80%);
                     // background-color: @marketing-nav-color;
+                }
+                @media @mobile{
+                    .mediamode();
+                    border-bottom: 1px dashed white;
                 }
             }
         }
