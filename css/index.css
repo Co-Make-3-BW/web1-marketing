@@ -198,7 +198,7 @@ p {
 }
 @media (max-width: 500px) {
   .marketing-sticky-nav {
-    position: relative;
+    position: static;
   }
 }
 .marketing-sticky-nav .marketing-nav-container {
@@ -234,6 +234,11 @@ p {
   justify-content: center;
   align-items: center;
   width: 75%;
+}
+@media (max-width: 860px) {
+  .marketing-sticky-nav .marketing-nav-container nav {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .marketing-sticky-nav .marketing-nav-container nav {
@@ -423,6 +428,7 @@ p {
   text-decoration: underline;
 }
 .marketing-aboutus-intro p {
+  text-align: center;
   font-family: 'Lato';
 }
 .marketing-aboutus-intro * {
@@ -443,6 +449,16 @@ p {
   margin: 1%;
   background-color: #5863F8;
 }
+@media (max-width: 860px) {
+  .aboutus-cards-container .aboutus-card {
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutus-cards-container .aboutus-card {
+    width: 95%;
+  }
+}
 .aboutus-cards-container .aboutus-card .about-img-box {
   display: flex;
   justify-content: center;
@@ -453,6 +469,11 @@ p {
 .aboutus-cards-container .aboutus-card .about-img-box img {
   width: 70%;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .aboutus-cards-container .aboutus-card .about-img-box img {
+    width: 100%;
+  }
 }
 .aboutus-cards-container .aboutus-card .about-img-box .about-icons {
   display: flex;
@@ -472,6 +493,12 @@ p {
 .aboutus-cards-container .aboutus-card .about-img-box .about-icons a {
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .aboutus-cards-container .aboutus-card .about-img-box .about-icons {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
 .aboutus-cards-container .aboutus-card .about-card-text {
   width: 68%;
   border-top: 2px dashed black;
@@ -489,6 +516,9 @@ p {
 }
 .aboutus-cards-container .aboutus-card .about-card-text p {
   font-family: 'Lato';
+}
+.aboutus-cards-container .aboutus-card .about-card-text * {
+  margin: 5% 0;
 }
 .aboutus-cards-container .aboutus-card * {
   margin: 2%;
@@ -511,7 +541,7 @@ p {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: 1%;
-  margin: 1% 0;
+  margin: 1%;
 }
 .about-contact-container .about-contact .about-contact-form {
   display: flex;
@@ -527,7 +557,7 @@ p {
 .about-contact-container .about-contact .about-contact-form input {
   width: 70%;
   font-size: 1.5rem;
-  margin: 1%;
+  margin: 2%;
   padding: 1%;
 }
 .about-contact-container .about-contact .about-contact-form textarea {
@@ -540,4 +570,9 @@ p {
   background-color: #f8f8f8;
   resize: none;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .about-contact-container .about-contact .about-contact-form textarea {
+    height: 100px;
+  }
 }

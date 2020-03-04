@@ -9,6 +9,7 @@
         text-decoration: underline;
     }
     p{
+        text-align: center;
         font-family: @marketing-page-font2;
     }
     *{
@@ -27,6 +28,13 @@
         width: 80%;
         margin: 1%;
         background-color: @about-card-background;
+        @media @tablet{
+            width: 85%;
+        }
+
+        @media @mobile{
+            width: 95%;
+        }
 
         .about-img-box{
             .flex(center,center);
@@ -37,6 +45,9 @@
                 width:70%;
                 
                 margin-bottom:1%;
+                @media @mobile{
+                    width:100%;
+                }
             }
             .about-icons{
                 .flex(space-around, center);
@@ -51,6 +62,10 @@
                 a{
                     margin:2%;
                 }
+                @media @mobile{
+                    width: 100%;
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -59,6 +74,7 @@
             border-top: 2px dashed black;
             border-bottom: 2px dashed black;
             color:@about-card-font-color;
+            // padding:3% 0;
             h2{
                 font-family: @marketing-page-font1;
                 text-decoration: underline;
@@ -70,6 +86,9 @@
             }
             p{
                 font-family: @marketing-page-font2;
+            }
+            *{
+                margin: 5% 0;
             }
         }
 
@@ -93,8 +112,8 @@
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         padding: 1%;
-        margin: 1% 0;
-        // margin:1%;
+        margin: 1%;
+
         .about-contact-form{
             .flex(center,center);
             flex-direction: column;
@@ -108,7 +127,7 @@
             input{
                 width:70%;
                 font-size: 1.5rem;
-                margin: 1%;
+                margin: 2%;
                 padding: 1%;
             }
             
@@ -122,11 +141,10 @@
                 background-color: #f8f8f8;
                 resize: none;
                 margin: 1%;
-              }
-              *{
-                  
-              }
-              
+                @media @mobile{
+                    height: 100px;
+                }
+            }
         }
     }
 }
