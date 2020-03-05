@@ -301,7 +301,8 @@ p {
   font-family: 'Montserrat';
   color: #EFE9F4;
   padding: 1% 5% ;
-  border-bottom: 2px solid #2C3130;
+  border-bottom: 3px solid #EFE9F4;
+  text-align: center;
 }
 .marketing-banner-background .marketing-banner-container button {
   width: 25%;
@@ -335,7 +336,8 @@ p {
   text-align: center;
   border-bottom: 2px solid #2C3130;
   padding-top: 3%;
-  margin-bottom: 1%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 .marketing-middle-cards .marketing-card-container {
   display: flex;
@@ -378,7 +380,7 @@ p {
   border-radius: 5px;
 }
 .marketing-middle-cards .marketing-card-container .marketing-card button:hover {
-  background-color: #724a94;
+  background-color: rgba(9, 24, 225, 0.7);
 }
 .marketing-middle-cards .marketing-card-container .marketing-card * {
   padding: 2%;
@@ -399,6 +401,12 @@ p {
   border-bottom: 2px solid black;
   padding: 3%;
   margin: 2% 0;
+}
+.marketing-page-width-container .marketing-closing-paragraph h2 {
+  font-family: 'Montserrat';
+}
+.marketing-page-width-container .marketing-closing-paragraph p {
+  font-family: 'Lato';
 }
 .marketing-page-width-container .marketing-closing-paragraph button {
   width: 40%;
@@ -478,6 +486,7 @@ p {
 }
 .aboutus-cards-container .aboutus-card .about-img-box img {
   width: 70%;
+  border-radius: 10px;
   margin-bottom: 1%;
 }
 @media (max-width: 500px) {
@@ -553,12 +562,16 @@ p {
   padding: 1%;
   margin: 1%;
 }
+.about-contact-container .about-contact h2 {
+  font-family: 'Montserrat';
+}
 .about-contact-container .about-contact .about-contact-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  font-family: 'Lato';
 }
 .about-contact-container .about-contact .about-contact-form label {
   width: 70%;
