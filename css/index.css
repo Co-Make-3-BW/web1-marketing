@@ -2,8 +2,9 @@
 4E86A7//78,134,167
 224357 
 EFE9F4 
-2C3130//168,10%,19% 
-5863F8//236,65%,97%*/
+2C3130//
+5863F8//
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -380,7 +381,7 @@ p {
   border-radius: 5px;
 }
 .marketing-middle-cards .marketing-card-container .marketing-card button:hover {
-  background-color: rgba(9, 24, 225, 0.7);
+  background-color: rgba(7, 19, 176, 0.7);
 }
 .marketing-middle-cards .marketing-card-container .marketing-card * {
   padding: 2%;
