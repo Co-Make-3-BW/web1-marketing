@@ -64,13 +64,20 @@
         .marketing-card{
             .flex(center, center);
             flex-direction: column;
+            font-family: @marketing-page-font2;
+            font-weight: bold;
             font-size: large;
             text-align: center;
+            height: 300px;
             width:26%;
             margin: 4% 2%;
             border: 1px dashed black;
-            @media @mobile{
+            @media @tablet{
                 width:45%;
+            }
+            @media @mobile{
+                width:80%;
+                border: 3px dashed black;
             }
 
             .fa{
@@ -102,6 +109,7 @@
         .flex(center, center);
         flex-direction: column;
         width:@marketing-page-width;
+        text-align: center;
         border-top: 2px solid black;
         border-bottom: 2px solid black;;
         padding: 3%;
@@ -113,6 +121,10 @@
 
         p{
             font-family: @marketing-page-font2;
+            .marketing-justalittlebold{
+                font-weight: bold;
+                text-decoration: underline;
+            }
         }
 
         button{

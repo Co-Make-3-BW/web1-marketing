@@ -354,15 +354,24 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Lato';
+  font-weight: bold;
   font-size: large;
   text-align: center;
+  height: 300px;
   width: 26%;
   margin: 4% 2%;
   border: 1px dashed black;
 }
-@media (max-width: 500px) {
+@media (max-width: 860px) {
   .marketing-middle-cards .marketing-card-container .marketing-card {
     width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .marketing-middle-cards .marketing-card-container .marketing-card {
+    width: 80%;
+    border: 3px dashed black;
   }
 }
 .marketing-middle-cards .marketing-card-container .marketing-card .fa {
@@ -398,6 +407,7 @@ p {
   align-items: center;
   flex-direction: column;
   width: 85%;
+  text-align: center;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: 3%;
@@ -408,6 +418,10 @@ p {
 }
 .marketing-page-width-container .marketing-closing-paragraph p {
   font-family: 'Lato';
+}
+.marketing-page-width-container .marketing-closing-paragraph p .marketing-justalittlebold {
+  font-weight: bold;
+  text-decoration: underline;
 }
 .marketing-page-width-container .marketing-closing-paragraph button {
   width: 40%;

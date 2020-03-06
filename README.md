@@ -1,6 +1,21 @@
 # web1-marketing
 Marketing Page for Web1
 
+pitch:
+Ever get frustrated that a problem in your town or neighborhood goes ages without being resolved?
+You might have road issues (potholes, dangerous areas..), overgrown plant issues, or anything else that makes living where you live a little less pleasant.
+With Co-make you can make your voice heard on the issues you would like to see resolved in your community.
+
+3 simple steps:
+1. Describe the problem.
+2. Other authenticated locals upvote the problem.
+3. Problems with the most upvote get prioritized by local government or HOA’s to be resolved first.
+
+
+As well as seeing real change in your community you get rewards for being a positive community member in the form of points, freebies, and
+ local recognition.
+
+
 Notes:
 
 The problem we are solving:
