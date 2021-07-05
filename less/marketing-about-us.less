@@ -1,0 +1,157 @@
+.marketing-aboutus-intro{
+    .flex(center,center);
+    flex-direction: column;
+    padding:1% 0;
+    margin:1%;
+    border-bottom: 2px solid black;
+    h1{
+        font-family: @marketing-page-font1;
+        // padding-bottom: 1%;
+        text-decoration: underline;
+    }
+    p{
+        text-align: center;
+        font-family: @marketing-page-font2;
+    }
+    *{
+        margin: 1%;
+    }
+}
+
+.aboutus-cards-container{
+    .flex(space-around,center);
+    flex-wrap: wrap;
+    flex-direction: column;
+    // background-color: @about-background-color;
+
+    .aboutus-card{
+        .flex(space-between,center);
+        width: 80%;
+        margin: 1%;
+        background-color: @about-card-background;
+        @media @tablet{
+            width: 85%;
+        }
+
+        @media @mobile{
+            width: 95%;
+        }
+
+        .about-img-box{
+            .flex(center,center);
+            flex-direction: column;
+            width:30%;
+            
+            img{
+                width:70%;
+                border-radius: 10px;
+                
+                margin-bottom:1%;
+                @media @mobile{
+                    width:100%;
+                }
+            }
+            .about-icons{
+                .flex(space-around, center);
+                width:70%;
+                font-size: 2.5rem;
+                border-top: 2px dashed black;
+                border-bottom: 2px dashed black;
+                i{
+                    color:white;
+                    .hover(white);
+                }
+                a{
+                    margin:2%;
+                }
+                @media @mobile{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .about-card-text{
+            width:68%;
+            border-top: 2px dashed black;
+            border-bottom: 2px dashed black;
+            color:@about-card-font-color;
+            // padding:3% 0;
+            h2{
+                font-family: @marketing-page-font1;
+                text-decoration: underline;
+            }
+            h3{
+                font-size: 1.8rem;
+                font-family: @marketing-page-font2;
+                text-decoration: underline;
+            }
+            p{
+                font-family: @marketing-page-font2;
+            }
+            *{
+                margin: 5% 0;
+            }
+        }
+
+        *{
+            margin:2%;
+        }
+    }
+    .about-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+.about-contact-container{
+    .flex(center,center);
+    width: 100%;
+
+    .about-contact{
+        .flex(center,center);
+        flex-direction: column;
+        width: 80%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 1%;
+        margin: 1%;
+
+        h2{
+            font-family: @marketing-page-font1;
+        }
+
+        .about-contact-form{
+            .flex(center,center);
+            flex-direction: column;
+            width: 100%;
+            font-family: @marketing-page-font2;
+
+            label{
+                width:70%;
+                font-size: 1.5rem;
+            }
+
+            input{
+                width:70%;
+                font-size: 1.5rem;
+                margin: 2%;
+                padding: 1%;
+            }
+            
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                resize: none;
+                margin: 1%;
+                @media @mobile{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

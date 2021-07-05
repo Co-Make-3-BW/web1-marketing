@@ -1,0 +1,36 @@
+
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.marketing-navbutton(@size, @color, @fontcolor:white){
+    width: @size;
+    background-color: @color;
+    color: @fontcolor;
+
+    // font-family: @nav-button-font;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    padding: 1% 0;
+    border-radius: 10px;
+
+    // @color2: darken(@color, 30%);
+    // &:hover{
+    //     background-color: @color2;
+    // }
+}
+
+.hover(@color){
+    &:hover{
+        color:darken(@color, 30%);
+    }
+}
+
+.mediamode(){
+    width:100%;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,154 @@
+.marketing-banner-background{
+    //background img stuff
+    background-image: url("../img/projects-img.jpeg");
+    max-width: 100%;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    //other styling
+    .flex(center,center);
+
+    .marketing-banner-container{
+        .flex(center, center);
+        flex-direction: column;
+        width: 100%;
+        background-color: @marketing-intro-background-color;
+        padding: 2%;
+
+        //planned animation for content of this section
+        h2{
+            font-family: @marketing-intro-font;
+            color:@marketing-intro-font-color;
+            padding: 1% 5% ;
+            border-bottom: 3px solid @marketing-intro-font-color; //#2C3130;
+            text-align: center;
+        }
+        button{
+            .marketing-navbutton(25%, @marketing-intro-background-color, @marketing-intro-font-color);
+            border-color: @marketing-intro-font-color;
+            margin-top: 1.5%;
+            @color2: darken(@marketing-intro-background-color, 30%);
+
+            &:hover{
+                background-color: @color2;
+            }
+            @media @mobile{
+                width: 50%;
+            }
+        }
+    }
+
+}
+
+.marketing-middle-cards{
+    .flex(center,center);
+    flex-direction: column;
+    h2{
+        width:65%;
+        font-family: @marketing-intro-font;
+        text-align: center;
+        border-bottom: 2px solid #2C3130;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+    }
+    .marketing-card-container{
+        .flex(center,center);
+        flex-wrap: wrap;
+        width:@marketing-page-width;
+        padding: 2%;
+        background-color: @marketing-card-background;
+        .marketing-card{
+            .flex(center, center);
+            flex-direction: column;
+            font-family: @marketing-page-font2;
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            height: 300px;
+            width:26%;
+            margin: 4% 2%;
+            border: 1px dashed black;
+            @media @tablet{
+                width:45%;
+            }
+            @media @mobile{
+                width:80%;
+                border: 3px dashed black;
+            }
+
+            .fa{
+                font-size: 6rem;
+            }
+
+            button{
+                .marketing-navbutton(60%, @marketing-card-background, @marketing-intro-font-color);
+                border: none;
+                border-radius: 5px;
+
+                // @color2: darken(@marketing-card-background, 20%);
+                &:hover{
+                    background-color: darken(@marketing-intro-background-color, 30%);
+                }
+            }
+
+            *{
+                padding: 2%;
+                margin: 2% 0;
+            }
+        }
+    }
+}
+
+.marketing-page-width-container{
+    .flex(center,center);
+    .marketing-closing-paragraph{
+        .flex(center, center);
+        flex-direction: column;
+        width:@marketing-page-width;
+        text-align: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;;
+        padding: 3%;
+        margin: 2% 0;
+
+        h2{
+            font-family: @marketing-page-font1;
+        }
+
+        p{
+            font-family: @marketing-page-font2;
+            .marketing-justalittlebold{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+
+        button{
+            .marketing-navbutton(40%, @marketing-intro-background-color, @marketing-intro-font-color);
+            @color2: darken(@marketing-intro-background-color, 30%);
+
+            &:hover{
+                background-color: @color2;
+            }
+            @media @mobile{
+                
+            }
+        }
+
+        *{
+            margin: 2% 0;
+        }
+    }
+}
+.marketing-bottom-copyright{
+    width:100%;
+    background-color: @marketing-copyright-background;
+    text-align: center;
+    color:@marketing-nav-font-color;
+    padding: 1%;
+    font-size: 1.5rem;
+}
